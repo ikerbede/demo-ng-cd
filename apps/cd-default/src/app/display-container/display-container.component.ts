@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { CdContainerComponent } from '../cd-container/cd-container.component';
 import { CountDisplayComponent } from '../count-display/count-display.component';
 
 @Component({
   selector: 'demo-ng-cd-display-container',
   standalone: true,
-  imports: [CommonModule, CountDisplayComponent],
+  imports: [CommonModule, CdContainerComponent, CountDisplayComponent],
   templateUrl: './display-container.component.html',
   styleUrls: ['./display-container.component.css'],
 })
-export class DisplayContainerComponent {
-  cdCount = 0;
-}
+export class DisplayContainerComponent {}

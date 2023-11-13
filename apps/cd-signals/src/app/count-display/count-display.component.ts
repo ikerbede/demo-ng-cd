@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CdContainerComponent } from '../cd-container/cd-container.component';
 import { CountService } from '../shared/count.service';
@@ -9,7 +9,8 @@ import { CountService } from '../shared/count.service';
   imports: [CommonModule, CdContainerComponent],
   templateUrl: './count-display.component.html',
   styleUrls: ['./count-display.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CountDisplayComponent {
-  countService = inject(CountService);
+  readonly countService = inject(CountService);
 }

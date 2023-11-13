@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CountDisplayComponent } from '../count-display/count-display.component';
 import { CdContainerComponent } from '../cd-container/cd-container.component';
@@ -11,6 +11,4 @@ import { CdContainerComponent } from '../cd-container/cd-container.component';
   styleUrls: ['./display-container.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DisplayContainerComponent {
-  @Input() count = 0;
-}
+export class DisplayContainerComponent {}

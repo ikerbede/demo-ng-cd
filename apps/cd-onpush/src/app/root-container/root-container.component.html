@@ -1,6 +1,8 @@
-<h1>Default change detection</h1>
-<div class="container">
-  <p>Change detections: {{ cdCount }}</p>
-  <demo-ng-cd-display-container></demo-ng-cd-display-container>
-  <demo-ng-cd-incrementor></demo-ng-cd-incrementor>
-</div>
+<h1>Change detection on push</h1>
+<demo-ng-cd-cd-container>
+  <p>Count smart: {{ countService.count }}</p>
+  <p>Count: {{ count }}</p>
+  <demo-ng-cd-display-container [count]="count"></demo-ng-cd-display-container>
+  <div class="offset"></div>
+  <demo-ng-cd-incrementor (incremented)="increment()"></demo-ng-cd-incrementor>
+</demo-ng-cd-cd-container>

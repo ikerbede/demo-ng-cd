@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "cd-async/Routes": ["apps/cd-async/src/app/remote-entry/entry.routes.ts"],
       "cd-default/Routes": [
         "apps/cd-default/src/app/remote-entry/entry.routes.ts"
       ],
