@@ -1,0 +1,17 @@
+.cd-container {
+  width: 100%;
+  border: solid 1px black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cd-banner {
+  margin: 0;
+  padding: 16px;
+  color: white;
+  background-color: black;
+}
+
+.cd-content {
+  padding: 50px;
+}
